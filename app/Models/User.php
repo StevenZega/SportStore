@@ -6,6 +6,21 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use OpenApi\Annotations as OA;
+
+/** 
+* Class Shoes
+*
+* @author Steven <steven.422024020@civitas.ukrida.ac.id>
+*
+* @OA\Schema(
+*     description="Shoes model",
+*     title="Shoes model",
+*     @OA\Xml(
+*         name="Shoes"
+*     )
+* )
+*/
 
 class User extends Authenticatable
 {

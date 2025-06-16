@@ -4,7 +4,23 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use Aoo\Models\User;
+use App\Models\User;
+use OpenApi\Annotations as OA;
+
+/** 
+* Class Shoes
+*
+* @author Steven <steven.422024020@civitas.ukrida.ac.id>
+*
+* @OA\Schema(
+*     description="Shoes model",
+*     title="Shoes model",
+*     required={"title", "author"},
+*     @OA\Xml(
+*         name="Shoes"
+*     )
+* )
+*/
 
 class Shoes extends Model
 {

@@ -2,18 +2,16 @@
 
 use Illuminate\Support\Facades\Route;
 
+Route::get('/shoes', [ShoesController::class, 'index']);
+
 Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/about', function () {
-    return view('about', ['nama' => 'Steven Zega']);
+Route::get('/product', function () {
+    return view('product');
 });
 
-Route::get('/blog', function () {
-    return view('blog');
-});
-
-Route::get('/contact', function () {
-    return view('contact');
+Route::get('/order', function () {
+    return view('order');
 });
