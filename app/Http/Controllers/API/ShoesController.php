@@ -210,7 +210,7 @@ class ShoesController extends Controller
      *         @OA\JsonContent()
      *     ),
      *     @OA\Response(
-     *         response=409,
+     *         response=400,
      *         description="Invalid input",
      *         @OA\JsonContent()
      *     ),
@@ -228,7 +228,8 @@ class ShoesController extends Controller
      *             type="integer",
      *             format="int64"
      *         )
-     *     )
+     *     ),
+     *     security={{"passport_token_ready"={}, "passport"={}}}
      * )
      */
 
