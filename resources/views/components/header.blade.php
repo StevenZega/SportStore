@@ -58,7 +58,7 @@
                         </div>
 
                         <div class="header-right-items d-none d-md-block">
-                            @if ($_COOKIE['ut'])
+                            @if(@$_COOKIE['ut'])
                             <div class="dropdown">
                                 <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
                                     Hello, {{ ucwords(substr($_COOKIE['ue'], 0, 3))}}
