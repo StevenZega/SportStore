@@ -7,49 +7,19 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-7 col-md-6 col-sm-12 col-xs-12">
-
                     <!-- Product Details Left -->
                     <div class="product-details-left">
                         <div class="product-details-images-2 slider-lg-image-2">
-
                             <div class="easyzoom-style">
                                 <div class="easyzoom easyzoom--overlay">
-                                    <a href="{{asset('assets/images/product/single-product-01.webp')}}" class="popup-img product-img-main-href">
-                                        <img src="{{asset('assets/images/product/single-product-01.webp')}}" class="img-fluid product-img-main-src" alt="">
+                                    <a href="#" class="popup-img product-img-main-href">
+                                        <img src="#" class="img-fluid product-img-main-src" alt="">
                                     </a>
                                 </div>
                             </div>
-
-                            <div class="easyzoom-style">
-                                <div class="easyzoom easyzoom--overlay">
-                                    <a href="{{asset('assets/images/product/single-product-02.webp')}}" class="popup-img">
-                                        <img src="{{asset('assets/images/product/single-product-03.webp')}}" class="img-fluid" alt="">
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="easyzoom-style">
-                                <div class="easyzoom easyzoom--overlay">
-                                    <a href="{{asset('assets/images/product/single-product-03.webp')}}" class="popup-img">
-                                        <img src="{{asset('assets/images/product/single-product-03.webp')}}" class="img-fluid" alt="">
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="easyzoom-style">
-                                <div class="easyzoom easyzoom--overlay">
-                                    <a href="{{asset('assets/images/product/single-product-04.webp')}}" class="popup-img">
-                                        <img src="{{asset('assets/images/product/single-product-04.webp')}}" class="img-fluid" alt="">
-                                    </a>
-                                </div>
-                            </div>
-
                         </div>
                         <div class="product-details-thumbs-2 slider-thumbs-2">
-                            <div class="sm-image"><img src="{{asset('assets/images/product/small/1-100x100.webp')}}" alt="product image thumb" class="product-img-main-src"></div>
-                            <div class="sm-image"><img src="{{asset('assets/images/product/small/2-100x100.webp')}}" alt="product image thumb"></div>
-                            <div class="sm-image"><img src="{{asset('assets/images/product/small/3-100x100.webp')}}" alt="product image thumb"></div>
-                            <div class="sm-image"><img src="{{asset('assets/images/product/small/4-100x100.webp')}}" alt="product image thumb"></div>
+                            <div class="sm-image"><img src="#" alt="product image thumb" class="product-img-main-src"></div>
                         </div>
                     </div>
                     <!--// Product Details Left -->
@@ -64,7 +34,6 @@
                                 <a href="#" id="product-review-body-count"></a>
                             </div>
                         </div>
-
 
                         <h3 class="price" id="product-price"></h3>
                         <div class="stock mt-10" id="product-status-stock"></div>
@@ -94,12 +63,8 @@
 
                             <div class="product_meta mt-30">
                                 <div class="posted_in item_meta">
-                                    <span class="label">Author: </span>
+                                    <span class="label">Brand: </span>
                                     <span id="product-author" class="text-color-primary"></span>
-                                </div>
-                                <div class="posted_in item_meta">
-                                    <span class="label">Publisher: </span>
-                                    <span id="product-publisher"></span>
                                 </div>
                                 <div class="tagged_as item_meta">
                                     <span class="label">Tag: </span>

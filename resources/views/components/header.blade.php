@@ -18,12 +18,8 @@
                     <div class="header-right-items content_hidden d-none d-md-block">
                         <span class="phone-number font-lg-p" title="Call us for fast delivery">
                             <a href="#cfd"><i class="icon-telephone"></i>&nbsp;&nbsp;<small class="text-color-primary">
-                            <b>+(62) 85213425678</b></small></a>
+                            <b>+(62) 82217932818</b></small></a>
                         </span>
-                    </div>
-                    <div class="logo_hidden text-start">
-                        <a href="{{route('home')}}"><img src="{{asset('assets/images/logo/logo.png')}}" alt="" style="height: 40px;">
-                        </a>
                     </div>
                 </div>
                 <div class="col-lg-6 col-6 d-none d-lg-block">
@@ -46,14 +42,14 @@
                         <div class="header-right-items d-none d-md-block">
                             <a href="#wishlist" class="header-cart">
                                 <i class="icon-heart"></i>
-                                <span class="item-counter">3</span>
+                                <span class="item-counter">1</span>
                             </a>
                         </div>
 
                         <div class="header-right-items">
                             <a href="#minicart" class="header-cart">
                                 <i class="icon-bag2"></i>
-                                <span class="item-counter">3</span>
+                                <span class="item-counter">4</span>
                             </a>
                         </div>
 

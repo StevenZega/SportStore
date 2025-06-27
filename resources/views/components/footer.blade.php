@@ -53,7 +53,7 @@
         <div class="container-fluid container-fluid--cp-100">
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-6 order-md-1 order-2">
-                    <span class="copyright-text text-center text-md-start">&copy; 2024 WTTW.
+                    <span class="copyright-text text-center text-md-start">&copy; 2024 Champs.
                         <a href="https://hashthemes.com/" target="_blank">All Rights Reserved.</a>
                     </span>
                 </div>
