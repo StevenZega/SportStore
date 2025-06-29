@@ -70,11 +70,13 @@ class ShoesController extends Controller
             $data['products'] = $data['products']->get()->map(function ($item) {
                 return [
                     'id' => $item->id,
-                    'title' => $item->name, // <-- inilah fix-nya
+                    'title' => $item->name, 
                     'cover' => $item->cover,
                     'price' => $item->price,
                     'brand' => $item->brand,
                     'type' => $item->type,
+                    'image_1' => $item->image_1,
+                    'image_2' => $item->image_2,
                 ];
             });
             $data['products_count_start'] = ($data['products_count_total'] == 0 ? 0 : (($page - 1) * $limit) + 1);

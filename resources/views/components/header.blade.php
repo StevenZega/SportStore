@@ -40,14 +40,14 @@
                     <div class="header-right-side text-end">
 
                         <div class="header-right-items d-none d-md-block">
-                            <a href="#wishlist" class="header-cart">
+                            <a href="{{ route('wishlist') }}" class="header-cart">
                                 <i class="icon-heart"></i>
                                 <span class="item-counter">1</span>
                             </a>
                         </div>
 
                         <div class="header-right-items">
-                            <a href="#minicart" class="header-cart">
+                            <a href="{{ route('minicart') }}" class="header-cart">
                                 <i class="icon-bag2"></i>
                                 <span class="item-counter">4</span>
                             </a>
@@ -60,7 +60,7 @@
                                     Hello, {{ ucwords(substr($_COOKIE['ue'], 0, 3))}}
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#my-profile"><span>My Profile</span></a></li>
+                                    <li><a href="{{ route('my-profile') }}"><span>My Profile</span></a></li>
                                     <li><a href="#" id="logout-btn"><span>Logout</span></a></li>
                                 </ul>
                             </div>
@@ -83,14 +83,6 @@
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-box-wrapper">
-                <div class="helendo-tabs">
-                    <ul class="nav" role="tablist">
-                        <li class="tab__item nav-item active">
-                            <a class="nav-link active" data-bs-toggle="tab" href="#tab_list_06" role="tab">Login</a>
-                        </li>
-                    </ul>
-                </div>
-
                 <div class="tab-content content-modal-box">
                     <div class="tab-pane fade show active" id="tab_list_06" role="tabpanel">
                         <form class="account-form-box" id="form-login">

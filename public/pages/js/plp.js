@@ -42,7 +42,7 @@ function getData(toPage=1){
                                     </div>
                                     <div class="product-content">
                                         <h6 class="product-title">
-                                            <a href="/shoes/`+item.id+`">`+item.name+`</a>
+                                            <a href="/shoes/`+item.id+`">`+item.title+`</a>
                                         </h6>
                                         <small class="text-color-primary">`+item.brand+`</small>
                                         <div class="product-price">

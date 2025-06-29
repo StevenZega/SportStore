@@ -13,3 +13,15 @@ Route::get('/shoes', function () {
 Route::get('/shoes/{i}', function () {
     return view('pages.pdp');    
 })->name('pdp');
+
+Route::get('/wishlist', function () {
+    return view('pages.wishlist');
+})->name('wishlist');
+
+Route::get('/minicart', function () {
+    return view('pages.minicart');
+})->name('minicart');
+
+Route::get('/my-profile', function () {
+    return view('pages.my-profile');
+})->name('my-profile');

@@ -73,12 +73,6 @@
         <div class="row mb-5">
             <div class="col-lg-6 col-md-8">
                 <div class="shop-toolbar__items shop-toolbar__item--left">
-                    <div class="shop-toolbar__item shop-toolbar__item--result">
-                        <p class="result-count">
-                            Showing <span id="products_count_start"></span> <span id="products_count_end"></span>
-                            of <span id="products_count_total"></span>
-                        </p>
-                    </div>
                     <div class="shop-toolbar__item ">
                         <select class="_filter form-select form-select-sm" name="_sort_by" onchange="getData()">
                             <option value="title_asc">Sort by A-Z</option>
@@ -96,7 +90,7 @@
                 <div class="header-right-search">
                     <div class="header-search-box">
                         <input class="_filter search-field" name="_search" type="text" onkeypress="getDataOnEnter(event)"
-                            placeholder="Search by title or author...">
+                            placeholder="Search items...">
                         <button class="search-icon"><i class="icon-magnifier"></i></button>
                     </div>
                 </div>
@@ -114,21 +108,7 @@
         </div>
     </div>
 </div>
-
-        </div>
-        <div class="col-lg-6 col-md-4">
-            <div class="header-right-search">
-                <div class="header-search-box">
-                    <input class="_filter search-field" name="_search" type="text"
-                        onkeypress="getDataOnEnter(event)"
-                        placeholder="Search by title or author...">
-                    <button class="search-icon"><i class="icon-magnifier"></i></button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-        <div>
+    <div>
         <div class="row" id="product-list"></div>
         <div class="row">
             <div class="col-12">

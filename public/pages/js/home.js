@@ -5,7 +5,7 @@ function getData(){
     let payload = {
         '_limit': 5,
         '_page': 1,
-        '_sort_by': 'latest_publication'  // ✅ perbaikan: nama sorting harus sesuai controller
+        '_sort_by': 'latest_publication'  
     };
 
     axios.get(url, { params: payload }, apiHeaders)
@@ -13,7 +13,6 @@ function getData(){
         console.log('[DATA] response..', response.data);
         let template = ``;
         (response.data.products || []).forEach((item) => {
-            // ✅ pastikan item.title tidak undefined agar breakWord tidak error
             let title = item.title || '(No title)';
             template += `
             <div class="single-hero-slider-7" onclick="location.href='${baseUrl}/shoes/${item.id}'">
@@ -22,7 +21,6 @@ function getData(){
                         <div class="col-lg-12">
                             <div class="hero-content-wrap">
                                 <div class="hero-text-7 mt-lg-5">
-                                    <h6 class="mb-20">Latest from WTTW</h6>
                                     <h1>${breakWord(title)}</h1>
                                     <div class="button-box section-space--mt_60">
                                         <a href="#" class="text-btn-normal font-weight--reguler font-lg-p">Discover now</a>

@@ -2,12 +2,10 @@
 @section('title', 'Product Detail')
 @section('content')
 <div class="site-wrapper-reveal">
-
     <div class="single-product-wrap section-space--pt_90 border-bottom pb-5 mb-5">
         <div class="container">
             <div class="row">
                 <div class="col-lg-7 col-md-6 col-sm-12 col-xs-12">
-                    <!-- Product Details Left -->
                     <div class="product-details-left">
                         <div class="product-details-images-2 slider-lg-image-2">
                             <div class="easyzoom-style">
@@ -18,11 +16,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="product-details-thumbs-2 slider-thumbs-2">
-                            <div class="sm-image"><img src="#" alt="product image thumb" class="product-img-main-src"></div>
+                        <div class="product-details-thumbs-2 slider-thumbs-2" id="product-thumbnails">
+                            <!-- thumbnail dari JS -->
                         </div>
                     </div>
-                    <!--// Product Details Left -->
                 </div>
                 <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12">
                     <div class="product-details-content">
@@ -37,7 +34,9 @@
 
                         <h3 class="price" id="product-price"></h3>
                         <div class="stock mt-10" id="product-status-stock"></div>
-                        <div class="quickview-peragraph mt-10"><p id="product-description"></p></div>
+                        <div class="quickview-peragraph mt-10">
+                            <p id="product-description"></p>
+                        </div>
 
                         <div class="quickview-action-wrap mt-30">
                             <div class="quickview-cart-box">
@@ -50,12 +49,12 @@
                                     </div>
                                     <div class="quickview-button">
                                         <div class="quickview-cart button product-add-to-cart">
-                                            <button type="button" class="btn--lg btn--black font-weight--reguler text-white">
+                                            <button type="button" class="btn--lg btn--black font-weight--reguler text-white btn-add-minicart">
                                                 Add to cart
                                             </button>
                                         </div>
                                         <div class="quickview-wishlist button">
-                                            <a title="Add to wishlist" href="#"><i class="icon-heart"></i></a>
+                                            <a title="Add to wishlist" href="#" class="btn-add-wishlist"><i class="icon-heart"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -75,21 +74,9 @@
                             <div class="product_socials section-space--mt_60">
                                 <span class="label">Share this items :</span>
                                 <ul class="helendo-social-share socials-inline">
-                                    <li>
-                                        <a class="share-facebook helendo-facebook" href="#" target="_blank">
-                                            <i class="social_facebook"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="share-twitter helendo-twitter" href="#" target="_blank">
-                                            <i class="social_twitter"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="share-instagram helendo-instagram" href="#" target="_blank">
-                                            <i class="social_instagram"></i>
-                                        </a>
-                                    </li>
+                                    <li><a class="share-facebook helendo-facebook" href="#" target="_blank"><i class="social_facebook"></i></a></li>
+                                    <li><a class="share-twitter helendo-twitter" href="#" target="_blank"><i class="social_twitter"></i></a></li>
+                                    <li><a class="share-instagram helendo-instagram" href="#" target="_blank"><i class="social_instagram"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -99,8 +86,10 @@
         </div>
 </div>
 @endsection
+
 @section('addition_css')
 @endsection
+
 @section('addition_script')
-    <script src="{{asset('pages/js/pdp.js')}}"></script>
+<script src="{{asset('pages/js/pdp.js')}}"></script>
 @endsection

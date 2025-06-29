@@ -6,10 +6,7 @@
             <div class="container">
                 <div class="row ">
                     <div class="col-lg-12">
-                        <!-- Hero Slider Area Start -->
-                        <div class="hero-area" id="product-preview">
-                        </div>
-                        <!-- Hero Slider Area End -->
+                        <div class="hero-area" id="product-preview"></div>
                     </div>
                 </div>
             </div>
@@ -30,21 +27,12 @@
             </div>
         </div>
 
-        <!-------Banner Video Area Start----->
-        <div class="banner-video-area overflow-hidden">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="banner-video-box">
-                            <img src="https://www.magd.ox.ac.uk/wp-content/uploads/2022/07/3027-052-2000x1000.jpg" alt="">
-                            <div class="video-icon">
-                                <a href="https://youtu.be/Na5KPnx0uS8?si=PPoJfum8xG-Jt8h9" class="popup-youtube">
-                                    <i class="linear-ic-play"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <!-- Banner Video Area Start -->
+        <div class="banner-video-box position-relative text-center">
+            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                <iframe 
+                    src="https://www.youtube.com/embed/dHYTo6Da2aA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;">
+                </iframe>
             </div>
         </div>
         <!-- Banner Video Area End -->
@@ -55,42 +43,47 @@
                 <div class="brand-slider-active">
                     <div class="col-lg-12">
                         <div class="single-brand-item">
-                            <a href="#"><img src="assets/images/brand/partnerb1.jpg" class="img-fluid" alt="Brand Images"></a>
+                            <a href="https://www.nike.com/id/" target="_blank"><img src="assets/images/brand/partnerb1.png" class="img-fluid" alt="Brand Images"></a>
                         </div>
                     </div>
                     <div class="col-lg-12">
                         <div class="single-brand-item">
-                            <a href="#"><img src="assets/images/brand/partnerb2.jpg" class="img-fluid" alt="Brand Images"></a>
+                            <a href="https://www.adidas.co.id/" target="_blank"><img src="assets/images/brand/partnerb2.png" class="img-fluid" alt="Brand Images"></a>
                         </div>
                     </div>
                     <div class="col-lg-12">
                         <div class="single-brand-item">
-                            <a href="#"><img src="assets/images/brand/partnerb3.jpg" class="img-fluid" alt="Brand Images"></a>
+                            <a href="https://airwalk.com/" target="_blank"><img src="assets/images/brand/partnerb3.png" class="img-fluid" alt="Brand Images"></a>
                         </div>
                     </div>
                     <div class="col-lg-12">
                         <div class="single-brand-item">
-                            <a href="#"><img src="assets/images/brand/partnerb4.jpg" class="img-fluid" alt="Brand Images"></a>
+                            <a href="https://asics.co.id/" target="_blank"><img src="assets/images/brand/partnerb4.png" class="img-fluid" alt="Brand Images"></a>
                         </div>
                     </div>
                     <div class="col-lg-12">
                         <div class="single-brand-item">
-                            <a href="#"><img src="assets/images/brand/partnerb5.jpg" class="img-fluid" alt="Brand Images"></a>
+                            <a href="https://www.hoka.com/" target="_blank"><img src="assets/images/brand/partnerb5.png" class="img-fluid" alt="Brand Images"></a>
                         </div>
                     </div>
                     <div class="col-lg-12">
                         <div class="single-brand-item">
-                    <a href="#"><img src="assets/images/brand/partnerb6.jpg" class="img-fluid" alt="Brand Images"></a>
+                            <a href="https://www.newbalance.com/" target="_blank"><img src="assets/images/brand/partnerb6.png" class="img-fluid" alt="Brand Images"></a>
                         </div>
                     </div>
                     <div class="col-lg-12">
                         <div class="single-brand-item">
-                            <a href="#"><img src="assets/images/brand/partnerb7.jpg" class="img-fluid" alt="Brand Images"></a>
+                            <a href="https://sg.puma.com/sg/en/home" target="_blank"><img src="assets/images/brand/partnerb7.png" class="img-fluid" alt="Brand Images"></a>
                         </div>
                     </div>
                     <div class="col-lg-12">
                         <div class="single-brand-item">
-                            <a href="#"><img src="assets/images/brand/partnerb8.jpg" class="img-fluid" alt="Brand Images"></a>
+                            <a href="https://www.reebok.com/" target="_blank"><img src="assets/images/brand/partnerb8.png" class="img-fluid" alt="Brand Images"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="single-brand-item">
+                            <a href="https://www.skechers.id/" target="_blank"><img src="assets/images/brand/partnerb9.png" class="img-fluid" alt="Brand Images"></a>
                         </div>
                     </div>
                 </div>
@@ -133,5 +126,17 @@
 @section('addition_css')
 @endsection
 @section('addition_script')
+    <script src="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/magnific-popup.css">
+
+    <script>
+        $(document).ready(function () {
+            $('.popup-youtube').magnificPopup({
+                type: 'iframe',
+                mainClass: 'mfp-fade',
+                preloader: true
+            });
+        });
+    </script>
     <script src="{{asset('pages/js/home.js')}}"></script>
 @endsection
