@@ -8,8 +8,6 @@
                     <h5 class="footer-widget__title mb-20">Customer Service</h5>
                     <ul class="footer-widget__list">
                         <li><a href="#" class="hover-style-link">Help & Contact Us</a></li>
-                        <li><a href="#" class="hover-style-link">Returns & Refunds</a></li>
-                        <li><a href="#" class="hover-style-link">Online Stores</a></li>
                         <li><a href="#" class="hover-style-link">Terms & Conditions</a></li>
                     </ul>
                 </div>
@@ -18,7 +16,6 @@
                     <h5 class="footer-widget__title mb-20">Company</h5>
                     <ul class="footer-widget__list">
                         <li><a href="#" class="hover-style-link">About Us</a></li>
-                        <li><a href="#" class="hover-style-link">What We Do</a></li>
                         <li><a href="#" class="hover-style-link">FAQ Page</a></li>
                         <li><a href="#" class="hover-style-link">Contact Us</a></li>
                     </ul>
@@ -42,7 +39,6 @@
                     <ul class="footer-widget__footer-menu  section-space--mt_60 d-none d-lg-block">
                         <li><a href="#">Term & Condition</a></li>
                         <li><a href="#">Policy</a></li>
-                        <li><a href="#">Map</a></li>
                     </ul>
                 </div>
             </div>

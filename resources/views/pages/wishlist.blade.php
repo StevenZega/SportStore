@@ -65,7 +65,7 @@ $(function () {
         container.html('<p class="text-danger">Failed to load wishlist</p>');
     });
 
-    // Event: hapus dari wishlist
+    // Menghapus item dari wishlist //
     $(document).on('click', '.btn-remove-wishlist', function () {
         let productId = $(this).closest('[data-id]').data('id').toString();
         let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
@@ -73,7 +73,6 @@ $(function () {
         localStorage.setItem('wishlist', JSON.stringify(wishlist));
         $(this).closest('[data-id]').remove();
 
-        // Jika kosong, tampilkan pesan
         if ($('[data-id]').length === 0) {
             $('#wishlist-container').html('<p class="text-muted">Semua produk di wishlist telah dihapus.</p>');
         }

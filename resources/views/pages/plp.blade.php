@@ -2,11 +2,12 @@
 @section('title', 'Shop')
 @section('content')
 <div class="site-wrapper-reveal">
+    
     <!-- Product Area Start -->
     <div class="product-wrapper section-space--ptb_90 border-bottom pb-5 mb-5">
         <div class="container">
-
             <div class="row">
+
     <!-- SIDEBAR -->
     <div class="col-lg-3 col-md-3 order-md-1 order-2 small-mt__40">
         <div class="shop-widget widget-shop-categories mt-3">
@@ -28,17 +29,17 @@
             </div>
         </div>
 
-        <div class="shop-widget widget-color">
+        
+        <div class="shop-widget">
             <div class="product-filter">
-                <h6 class="mb-20">Color</h6>
-                <ul class="widget-nav-list">
-                    <li><a href="#"><span class="swatch-color black"></span></a></li>
-                    <li><a href="#"><span class="swatch-color green"></span></a></li>
-                    <li><a href="#"><span class="swatch-color grey"></span></a></li>
-                    <li><a href="#"><span class="swatch-color red"></span></a></li>
-                    <li><a href="#"><span class="swatch-color white"></span></a></li>
-                    <li><a href="#"><span class="swatch-color yellow"></span></a></li>
-                </ul>
+                <h6 class="mb-20">Tags</h6>
+                <div class="blog-tagcloud">
+                    <a href="#" class="selected">Shoes</a>
+                    <a href="#">Jacket</a>
+                    <a href="#">Best Seller</a>
+                    <a href="#">pants</a>
+                    <a href="#">bag</a>
+                </div>
             </div>
         </div>
 
@@ -51,19 +52,6 @@
                     <li><a href="#">IDR 501-1000K</a></li>
                     <li><a href="#">Above IDR 1000K</a></li>
                 </ul>
-            </div>
-        </div>
-
-        <div class="shop-widget">
-            <div class="product-filter">
-                <h6 class="mb-20">Tags</h6>
-                <div class="blog-tagcloud">
-                    <a href="#" class="selected">Shoes</a>
-                    <a href="#">Jacket</a>
-                    <a href="#">Best Seller</a>
-                    <a href="#">pants</a>
-                    <a href="#">bag</a>
-                </div>
             </div>
         </div>
     </div>
@@ -119,6 +107,7 @@
     </div>
 </div>
 <!-- Product Area End -->
+
 </div>
 @endsection
 @section('addition_css')

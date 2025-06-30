@@ -25,3 +25,7 @@ Route::get('/minicart', function () {
 Route::get('/my-profile', function () {
     return view('pages.my-profile');
 })->name('my-profile');
+
+Route::get('/checkout', function () {
+    return view('pages.checkout');
+})->name('checkout');

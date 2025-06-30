@@ -17,7 +17,6 @@
                             </div>
                         </div>
                         <div class="product-details-thumbs-2 slider-thumbs-2" id="product-thumbnails">
-                            <!-- thumbnail dari JS -->
                         </div>
                     </div>
                 </div>
