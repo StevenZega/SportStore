@@ -39,7 +39,7 @@ $(function () {
             <div class="d-flex justify-content-between align-items-center">
                 <h5>Total: IDR ${totalHarga.toLocaleString()}</h5>
                 <div class="form-group mb-0">
-                    <label for="payment-method" class="me-2">Payment method:</label>
+                    <label for="payment-method" class="me-2">Payment method :</label>
                     <select id="payment-method" class="form-select d-inline-block w-auto" style="min-width: 150px;">
                         <option value="Cash">Cash</option>
                         <option value="Qris">QRIS</option>
@@ -50,14 +50,14 @@ $(function () {
                     </select>
                 </div>
             </div>
-            <button class="btn btn-dark mt-3 w-100" id="btn-pay">Bayar Sekarang</button>
+            <button class="btn btn-dark mt-3 w-100" id="btn-pay">Pay now</button>
         </div>`;
 
         container.html(html);
 
         $('#btn-pay').on('click', function () {
             const metode = $('#payment-method').val();
-            Swal.fire('Pembayaran', `Checkout berhasil dengan metode: ${metode}`, 'success');
+            Swal.fire('Pembayaran', `Checkout successfully with ${metode}`, 'success');
             localStorage.removeItem('minicart');
             setTimeout(() => location.href = baseUrl + '/', 2000);
         });

@@ -83,7 +83,7 @@ $(function () {
         $(this).closest('[data-id]').remove();
 
         if ($('[data-id]').length === 0) {
-            $('#minicart-container').html('<p class="text-muted">Semua produk di minicart telah dihapus.</p>');
+            $('#minicart-container').html('<p class="text-muted">No products in your minicart</p>');
         }
     });
 });

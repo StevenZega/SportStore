@@ -9,11 +9,11 @@ function getDataByWindowUrlKey() {
             console.log('[DATA] response..', product);
             let template = '';
 
-            // Gambar utama
+            // Gambar utama //
             $('.product-img-main-href').attr('href', product.cover);
             $('.product-img-main-src').attr('src', product.cover);
 
-            // THUMBNAILS
+            // Thumbnails //
             let thumbnails = [product.cover];
             if (product.image_1) thumbnails.push(product.image_1);
             if (product.image_2) thumbnails.push(product.image_2);
@@ -34,17 +34,15 @@ function getDataByWindowUrlKey() {
 
             $('#product-name').html(product.name);
             $('#product-price').html('IDR ' + parseFloat(product.price).toLocaleString());
-            $('#product-description').html(product.description ?? '-');
             $('#product-author').html(product.brand);
-            $('#product-publisher').html('');
 
-            let stars = randomIntFromInterval(1, 5);
+            let stars = randomIntFromInterval(3, 5);
             template = '';
             for (let index = 0; index < 5; index++) {
                 template += '<i class="' + (index < stars ? 'yellow' : '') + ' icon_star"></i>';
             }
             $('#product-review-stars').html(template);
-            $('#product-review-body-count').html(randomIntFromInterval(1, 1000) + ' customer review');
+            $('#product-review-body-count').html(randomIntFromInterval(100, 1000) + ' customer review');
 
             let statusStock = randomIntFromInterval(0, 1);
             $('#product-status-stock')
@@ -68,7 +66,7 @@ function getDataByWindowUrlKey() {
             });
             $('#product-tags').html(template);
 
-            // ====== WISHLIST ACTION ======
+            // Menambahkan item ke wishlist //
             $('.quickview-wishlist a').off('click').on('click', function (e) {
                 e.preventDefault();
                 let productId = product.id.toString();
@@ -83,7 +81,7 @@ function getDataByWindowUrlKey() {
                 }
             });
 
-            // ====== MINICART ACTION ======
+            // Menambahkan item ke minicart //
             $('.btn-add-minicart').off('click').on('click', function (e) {
                 e.preventDefault();
                 let qty = parseInt($('.cart-plus-minus-box').val());
@@ -100,9 +98,9 @@ function getDataByWindowUrlKey() {
                 } else {
                     minicart.push({ id: product.id, qty: qty });
                 }
-
+                
                 localStorage.setItem('minicart', JSON.stringify(minicart));
-                Swal.fire('Berhasil!', 'Produk masuk ke keranjang.', 'success');
+                Swal.fire('Successful!', 'Added to minicart', 'success');
             });
 
         })
@@ -112,8 +110,8 @@ function getDataByWindowUrlKey() {
                 Swal.fire({
                     position: "top-end",
                     icon: "warning",
-                    title: "Yaah...",
-                    html: "Produk yang Anda cari tidak ditemukan",
+                    title: "Ooops...",
+                    html: "No matches product",
                     showConfirmButton: false,
                     timer: 5000
                 });

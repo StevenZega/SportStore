@@ -45,6 +45,7 @@
         </div>
     </div>
 
+    <!--   Copyright   -->
     <div class="footer-copyright-area border-top section-space--ptb_30">
         <div class="container-fluid container-fluid--cp-100">
             <div class="row align-items-center">

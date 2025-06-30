@@ -12,6 +12,7 @@
                     <p><strong>Name :</strong> Ada Lovelace</p>
                     <p><strong>Email :</strong> {{ $_COOKIE['ue'] }}</p>
                     <p><strong>Birth date :</strong> <input type="date"></input></p>
+                    <p><strong>Address :</strong> Jakarta Barat</p>
                 </div>
             @else
                 <div class="alert alert-warning">
@@ -25,8 +26,12 @@
 
 @section('addition_css')
 <style>
-    h2 {
-        margin-left: 42%;
+    h5 {
+        margin-left: 40%;
+    }
+    
+    p {
+        margin-left: 35%;
     }
 </style>
 @endsection

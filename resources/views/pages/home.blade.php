@@ -93,7 +93,6 @@
 
         <!-- Our Member Area Start -->
         <div class="our-member-area section-space--pb_120">
-
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -101,7 +100,7 @@
                             <div class="row align-items-center">
                                 <div class="col-lg-5 col-md-4">
                                     <div class="section-title small-mb__40 tablet-mb__40">
-                                        <h4 class="section-title">Join the community!</h4>
+                                        <h4 class="section-title">Join Vikings Club!</h4>
                                         <p>Become one of the member and get discount 50% off</p>
                                     </div>
                                 </div>

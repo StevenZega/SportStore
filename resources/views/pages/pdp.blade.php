@@ -64,10 +64,6 @@
                                     <span class="label">Brand: </span>
                                     <span id="product-author" class="text-color-primary"></span>
                                 </div>
-                                <div class="tagged_as item_meta">
-                                    <span class="label">Tag: </span>
-                                    <span id="product-tags"></span>
-                                </div>
                             </div>
 
                             <div class="product_socials section-space--mt_60">

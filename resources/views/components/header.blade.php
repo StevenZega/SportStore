@@ -30,22 +30,22 @@
                                     <a href="{{route('home')}}"><span>Home</span></a>
                                 </li>
                                 <li>
-                                    <a href="{{route('plp')}}"><span>Shop</span></a>
+                                    <a href="{{route('plp')}}"><span>Products</span></a>
                                 </li>
                             </ul>
                         </nav>
                     </div>
                 </div>
+
+                <!--   Wishlist, Minicart, Profile   -->
                 <div class="col-lg-3 col-lgl3 col-6">
                     <div class="header-right-side text-end">
-
                         <div class="header-right-items d-none d-md-block">
                             <a href="{{ route('wishlist') }}" class="header-cart">
                                 <i class="icon-heart"></i>
                                 <span class="item-counter">1</span>
                             </a>
                         </div>
-
                         <div class="header-right-items">
                             <a href="{{ route('minicart') }}" class="header-cart">
                                 <i class="icon-bag2"></i>
