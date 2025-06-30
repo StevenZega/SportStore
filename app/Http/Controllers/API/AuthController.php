@@ -57,7 +57,7 @@ class AuthController extends Controller
             $request['password'] = Hash::make($request['password']);
             $request['remember_token'] = \Illuminate\Support\Str::random(10);
             $user = User::create($request->toArray());
-            $token = $user->createToken('<1st-name> REST API')->accessToken; // string inside createToken is the token name
+            $token = $user->createToken('<1st-name> REST API')->accessToken; 
             return response()->json(
                 array('name' => $request->name, 'email' => $request->get('email'), 'token' => $token),
                 200
